@@ -282,8 +282,7 @@ class P2PContractV1Generator:
         if 'metadata' in self.contract:
             meta = self.contract['metadata']
             meta_text = f"<b>Version:</b> {meta.get('version', '')} | "
-            meta_text += f"<b>Last Updated:</b> {meta.get('date', '')} | "
-            meta_text += f"<b>Author:</b> {meta.get('author', '')}"
+            meta_text += f"<b>Last Updated:</b> {meta.get('date', '')}"
             story.append(Paragraph(meta_text, self.styles['body']))
             story.append(Spacer(1, 18))
 
