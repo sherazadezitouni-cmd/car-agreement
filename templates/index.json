@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "layout": "split",
+        "image": "shopify://shop_images/hero-placeholder.jpg",
+        "title": "Timeless Design, Effortless Living",
+        "subtitle": "Discover our curated collection of premium essentials",
+        "cta_primary_text": "SHOP NOW",
+        "cta_primary_link": "/collections/all",
+        "cta_secondary_text": "EXPLORE",
+        "cta_secondary_link": "/pages/about",
+        "background_type": "image",
+        "text_alignment": "left",
+        "show_usp_bullets": true,
+        "usp_1": "Free shipping on orders over $100",
+        "usp_2": "30-day satisfaction guarantee",
+        "usp_3": "Sustainably sourced materials"
+      }
+    },
+    "social_proof": {
+      "type": "social-proof",
+      "settings": {
+        "heading": "Loved by Thousands",
+        "show_reviews": true,
+        "show_gallery": true,
+        "show_bestseller": true
+      }
+    },
+    "featured_collection": {
+      "type": "product-grid",
+      "settings": {
+        "collection": "",
+        "heading": "Featured Collection",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "columns_tablet": 3,
+        "columns_mobile": 2,
+        "show_filters": false,
+        "enable_sorting": false,
+        "enable_quick_view": true
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "social_proof",
+    "featured_collection"
+  ]
+}

@@ -1,0 +1,255 @@
+{% comment %}
+  Hero Section - Premium Minimal Theme
+  Supports two layout modes: full-bleed and split
+{% endcomment %}
+
+{%- liquid
+  assign layout = section.settings.layout
+  assign bg_type = section.settings.background_type
+  assign text_align = section.settings.text_alignment
+  assign show_usp = section.settings.show_usp_bullets
+-%}
+
+<section class="hero hero--{{ layout }}" data-section-id="{{ section.id }}" data-section-type="hero">
+  <div class="hero__container">
+    {% if layout == 'split' %}
+      {%- comment -%} Split Layout: Image on left, content on right {%- endcomment -%}
+      <div class="hero__media">
+        {% if section.settings.image %}
+          <img
+            srcset="
+              {{ section.settings.image | image_url: width: 600 }} 600w,
+              {{ section.settings.image | image_url: width: 900 }} 900w,
+              {{ section.settings.image | image_url: width: 1200 }} 1200w
+            "
+            src="{{ section.settings.image | image_url: width: 1200 }}"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            alt="{{ section.settings.image.alt | escape }}"
+            loading="eager"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}"
+            class="hero__image"
+          >
+        {% else %}
+          <div class="hero__placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); aspect-ratio: 4/5;"></div>
+        {% endif %}
+      </div>
+
+      <div class="hero__content hero__content--{{ text_align }}">
+        <div class="hero__content-wrapper">
+          {% if section.settings.subtitle != blank %}
+            <p class="hero__subtitle">{{ section.settings.subtitle }}</p>
+          {% endif %}
+
+          {% if section.settings.title != blank %}
+            <h1 class="hero__title">{{ section.settings.title }}</h1>
+          {% endif %}
+
+          {% if show_usp %}
+            <ul class="hero__usp-list">
+              {% if section.settings.usp_1 != blank %}
+                <li class="hero__usp-item">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="4,10 8,14 16,6"></polyline>
+                  </svg>
+                  {{ section.settings.usp_1 }}
+                </li>
+              {% endif %}
+              {% if section.settings.usp_2 != blank %}
+                <li class="hero__usp-item">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="4,10 8,14 16,6"></polyline>
+                  </svg>
+                  {{ section.settings.usp_2 }}
+                </li>
+              {% endif %}
+              {% if section.settings.usp_3 != blank %}
+                <li class="hero__usp-item">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="4,10 8,14 16,6"></polyline>
+                  </svg>
+                  {{ section.settings.usp_3 }}
+                </li>
+              {% endif %}
+            </ul>
+          {% endif %}
+
+          <div class="hero__buttons">
+            {% if section.settings.cta_primary_text != blank %}
+              <a href="{{ section.settings.cta_primary_link }}" class="btn btn--primary btn--large">
+                {{ section.settings.cta_primary_text }}
+              </a>
+            {% endif %}
+
+            {% if section.settings.cta_secondary_text != blank %}
+              <a href="{{ section.settings.cta_secondary_link }}" class="btn btn--secondary btn--large">
+                {{ section.settings.cta_secondary_text }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+    {% else %}
+      {%- comment -%} Full-bleed Layout: Centered content over image {%- endcomment -%}
+      <div class="hero__fullbleed">
+        {% if section.settings.image %}
+          <div class="hero__background">
+            <img
+              srcset="
+                {{ section.settings.image | image_url: width: 750 }} 750w,
+                {{ section.settings.image | image_url: width: 1200 }} 1200w,
+                {{ section.settings.image | image_url: width: 1800 }} 1800w,
+                {{ section.settings.image | image_url: width: 2400 }} 2400w
+              "
+              src="{{ section.settings.image | image_url: width: 1800 }}"
+              sizes="100vw"
+              alt="{{ section.settings.image.alt | escape }}"
+              loading="eager"
+              width="{{ section.settings.image.width }}"
+              height="{{ section.settings.image.height }}"
+              class="hero__background-image"
+            >
+          </div>
+        {% else %}
+          <div class="hero__background" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+        {% endif %}
+
+        <div class="hero__content hero__content--centered">
+          <div class="hero__content-wrapper">
+            {% if section.settings.subtitle != blank %}
+              <p class="hero__subtitle">{{ section.settings.subtitle }}</p>
+            {% endif %}
+
+            {% if section.settings.title != blank %}
+              <h1 class="hero__title">{{ section.settings.title }}</h1>
+            {% endif %}
+
+            <div class="hero__buttons">
+              {% if section.settings.cta_primary_text != blank %}
+                <a href="{{ section.settings.cta_primary_link }}" class="btn btn--primary btn--large">
+                  {{ section.settings.cta_primary_text }}
+                </a>
+              {% endif %}
+
+              {% if section.settings.cta_secondary_text != blank %}
+                <a href="{{ section.settings.cta_secondary_link }}" class="btn btn--secondary btn--large">
+                  {{ section.settings.cta_secondary_text }}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "class": "section-hero",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        {
+          "value": "split",
+          "label": "Split (Image Left, Content Right)"
+        },
+        {
+          "value": "fullbleed",
+          "label": "Full-bleed (Centered Content)"
+        }
+      ],
+      "default": "split"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Timeless Design, Effortless Living"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Discover our curated collection"
+    },
+    {
+      "type": "text",
+      "id": "cta_primary_text",
+      "label": "Primary Button Text",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "cta_primary_link",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "cta_secondary_text",
+      "label": "Secondary Button Text",
+      "default": "EXPLORE"
+    },
+    {
+      "type": "url",
+      "id": "cta_secondary_link",
+      "label": "Secondary Button Link"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment (Split Layout Only)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_usp_bullets",
+      "label": "Show USP Bullets (Split Layout Only)",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "usp_1",
+      "label": "USP Bullet 1",
+      "default": "Free shipping on orders over $100"
+    },
+    {
+      "type": "text",
+      "id": "usp_2",
+      "label": "USP Bullet 2",
+      "default": "30-day satisfaction guarantee"
+    },
+    {
+      "type": "text",
+      "id": "usp_3",
+      "label": "USP Bullet 3",
+      "default": "Sustainably sourced materials"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,259 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Ethereal",
+    "theme_version": "1.0.0",
+    "theme_author": "Your Name",
+    "theme_documentation_url": "https://github.com/yourname/ethereal-theme",
+    "theme_support_url": "https://github.com/yourname/ethereal-theme/issues"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Theme Colors"
+      },
+      {
+        "type": "paragraph",
+        "content": "Customize the color palette of your theme. Default palette uses Terracotta accent."
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background Color",
+        "default": "#FAFBFB"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text Color",
+        "default": "#111827"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Accent Color",
+        "default": "#C7705C",
+        "info": "Used for buttons, links, and highlights"
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Border Color",
+        "default": "#E5E7EB"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Font Settings"
+      },
+      {
+        "type": "paragraph",
+        "content": "Theme uses system fonts by default for optimal performance. No custom fonts are loaded."
+      },
+      {
+        "type": "select",
+        "id": "base_font_size",
+        "label": "Base Font Size",
+        "options": [
+          {
+            "value": "14px",
+            "label": "Small (14px)"
+          },
+          {
+            "value": "16px",
+            "label": "Medium (16px)"
+          },
+          {
+            "value": "18px",
+            "label": "Large (18px)"
+          }
+        ],
+        "default": "16px"
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout Settings"
+      },
+      {
+        "type": "range",
+        "id": "container_width",
+        "min": 1200,
+        "max": 1600,
+        "step": 50,
+        "unit": "px",
+        "label": "Container Width",
+        "default": 1280
+      },
+      {
+        "type": "select",
+        "id": "spacing_size",
+        "label": "Spacing Size",
+        "options": [
+          {
+            "value": "compact",
+            "label": "Compact"
+          },
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "spacious",
+            "label": "Spacious"
+          }
+        ],
+        "default": "normal",
+        "info": "Controls overall spacing throughout the theme"
+      }
+    ]
+  },
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Header Settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo Image"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "min": 80,
+        "max": 250,
+        "step": 10,
+        "unit": "px",
+        "label": "Logo Width",
+        "default": 150
+      },
+      {
+        "type": "checkbox",
+        "id": "sticky_header",
+        "label": "Enable Sticky Header",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Product Cards",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Product Card Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show Vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_badges",
+        "label": "Show Product Badges (Sale, New)",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_quick_view",
+        "label": "Enable Quick View",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_image_hover",
+        "label": "Enable Image Hover (Show Second Image)",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Cart Settings"
+      },
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "Cart Type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Drawer (Sidebar)"
+          },
+          {
+            "value": "page",
+            "label": "Page"
+          }
+        ],
+        "default": "drawer"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_notes",
+        "label": "Enable Cart Notes",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "Social Media",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Social Media Links"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook",
+        "info": "https://www.facebook.com/yourstore"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram",
+        "info": "https://www.instagram.com/yourstore"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter",
+        "info": "https://twitter.com/yourstore"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "Pinterest",
+        "info": "https://www.pinterest.com/yourstore"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon",
+        "info": "Will be scaled down to 32x32px"
+      }
+    ]
+  }
+]

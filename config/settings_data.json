@@ -1,0 +1,19 @@
+{
+  "current": {
+    "color_bg": "#FAFBFB",
+    "color_text": "#111827",
+    "color_accent": "#C7705C",
+    "color_border": "#E5E7EB",
+    "base_font_size": "16px",
+    "container_width": 1280,
+    "spacing_size": "normal",
+    "logo_width": 150,
+    "sticky_header": true,
+    "show_vendor": false,
+    "show_badges": true,
+    "enable_quick_view": true,
+    "enable_image_hover": true,
+    "cart_type": "drawer",
+    "cart_notes": false
+  }
+}

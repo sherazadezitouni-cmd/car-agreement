@@ -1,0 +1,115 @@
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Skip to content",
+      "close": "Close",
+      "menu": "Menu",
+      "main_navigation": "Main navigation"
+    },
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    },
+    "search": {
+      "title": "Search",
+      "placeholder": "Search products...",
+      "submit": "Search",
+      "label": "Search our store"
+    },
+    "pagination": {
+      "label": "Pagination",
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "close": "Close"
+  },
+  "newsletter": {
+    "label": "Email",
+    "placeholder": "Enter your email",
+    "success": "Thanks for subscribing!",
+    "note": "By subscribing, you agree to receive marketing emails."
+  },
+  "cart": {
+    "general": {
+      "title": "Cart",
+      "empty": "Your cart is currently empty",
+      "subtotal": "Subtotal",
+      "taxes_and_shipping": "Taxes and shipping calculated at checkout",
+      "view_cart": "View Cart",
+      "checkout": "Checkout",
+      "remove": "Remove",
+      "quantity": "Quantity",
+      "increase_quantity": "Increase quantity",
+      "decrease_quantity": "Decrease quantity"
+    },
+    "label": {
+      "total": "Total"
+    }
+  },
+  "products": {
+    "product": {
+      "on_sale": "Sale",
+      "sold_out": "Sold Out",
+      "new": "New",
+      "quick_view": "Quick View",
+      "variants": "Options",
+      "add_to_cart": "Add to Cart",
+      "unavailable": "Unavailable",
+      "view_full_details": "View full details"
+    }
+  },
+  "collections": {
+    "general": {
+      "products": "products",
+      "no_matches": "No products found"
+    },
+    "filters": {
+      "title": "Filter",
+      "toggle": "Filters",
+      "clear_all": "Clear all",
+      "apply": "Apply Filters",
+      "category": "Category",
+      "price": "Price"
+    },
+    "sorting": {
+      "title": "Sort by",
+      "featured": "Featured",
+      "best_selling": "Best selling",
+      "az": "Alphabetically, A-Z",
+      "za": "Alphabetically, Z-A",
+      "price_ascending": "Price, low to high",
+      "price_descending": "Price, high to low",
+      "date_ascending": "Date, old to new",
+      "date_descending": "Date, new to old"
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Account"
+    },
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "forgot_password": "Forgot your password?",
+      "sign_in": "Sign In",
+      "guest_title": "Continue as a guest",
+      "guest_continue": "Continue"
+    },
+    "orders": {
+      "title": "Order History",
+      "order_number": "Order",
+      "date": "Date",
+      "payment_status": "Payment Status",
+      "fulfillment_status": "Fulfillment Status",
+      "total": "Total",
+      "none": "You haven't placed any orders yet."
+    }
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

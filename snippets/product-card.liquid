@@ -1,0 +1,143 @@
+{% comment %}
+  Product Card Snippet
+  Usage: {% render 'product-card', product: product, enable_quick_view: true %}
+{% endcomment %}
+
+{%- liquid
+  assign product_url = product.url | within: collection
+  assign on_sale = false
+  if product.compare_at_price > product.price
+    assign on_sale = true
+  endif
+
+  assign show_badge = show_badges | default: true
+  assign quick_view = enable_quick_view | default: false
+-%}
+
+<div class="product-card" data-product-id="{{ product.id }}">
+  <div class="product-card__inner">
+    {%- comment -%} Product Image with Hover Swap {%- endcomment -%}
+    <div class="product-card__media">
+      <a href="{{ product_url }}" class="product-card__link" aria-label="{{ product.title | escape }}">
+        {% if product.featured_image %}
+          <img
+            srcset="
+              {{ product.featured_image | image_url: width: 300 }} 300w,
+              {{ product.featured_image | image_url: width: 400 }} 400w,
+              {{ product.featured_image | image_url: width: 600 }} 600w
+            "
+            src="{{ product.featured_image | image_url: width: 600 }}"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="{{ product.featured_image.alt | escape }}"
+            loading="lazy"
+            width="{{ product.featured_image.width }}"
+            height="{{ product.featured_image.height }}"
+            class="product-card__image product-card__image--primary"
+          >
+
+          {%- comment -%} Hover Image (second image if available) {%- endcomment -%}
+          {% if product.images[1] %}
+            <img
+              srcset="
+                {{ product.images[1] | image_url: width: 300 }} 300w,
+                {{ product.images[1] | image_url: width: 400 }} 400w,
+                {{ product.images[1] | image_url: width: 600 }} 600w
+              "
+              src="{{ product.images[1] | image_url: width: 600 }}"
+              sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              alt="{{ product.images[1].alt | escape }}"
+              loading="lazy"
+              width="{{ product.images[1].width }}"
+              height="{{ product.images[1].height }}"
+              class="product-card__image product-card__image--hover"
+            >
+          {% endif %}
+        {% else %}
+          <div class="product-card__placeholder" style="aspect-ratio: 4/5; background: #e5e7eb;"></div>
+        {% endif %}
+      </a>
+
+      {%- comment -%} Badges {%- endcomment -%}
+      {% if show_badge %}
+        <div class="product-card__badges">
+          {% if on_sale %}
+            <span class="badge badge--sale">{{ 'products.product.on_sale' | t }}</span>
+          {% endif %}
+
+          {% if product.available == false %}
+            <span class="badge badge--sold-out">{{ 'products.product.sold_out' | t }}</span>
+          {% elsif product.tags contains 'new' %}
+            <span class="badge badge--new">{{ 'products.product.new' | t }}</span>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {%- comment -%} Quick View Button {%- endcomment -%}
+      {% if quick_view %}
+        <button
+          type="button"
+          class="product-card__quick-view"
+          data-product-handle="{{ product.handle }}"
+          aria-label="{{ 'products.product.quick_view' | t }}"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 10s3-7 9-7 9 7 9 7-3 7-9 7-9-7-9-7z"></path>
+            <circle cx="10" cy="10" r="3"></circle>
+          </svg>
+          <span>{{ 'products.product.quick_view' | t }}</span>
+        </button>
+      {% endif %}
+    </div>
+
+    {%- comment -%} Product Info {%- endcomment -%}
+    <div class="product-card__info">
+      {% if show_vendor and product.vendor %}
+        <p class="product-card__vendor">{{ product.vendor }}</p>
+      {% endif %}
+
+      <h3 class="product-card__title">
+        <a href="{{ product_url }}">{{ product.title }}</a>
+      </h3>
+
+      {%- comment -%} Price {%- endcomment -%}
+      <div class="product-card__price">
+        {% if on_sale %}
+          <span class="price price--on-sale">
+            <span class="price__current">{{ product.price | money }}</span>
+            <span class="price__compare">{{ product.compare_at_price | money }}</span>
+          </span>
+        {% else %}
+          <span class="price">
+            <span class="price__current">{{ product.price | money }}</span>
+          </span>
+        {% endif %}
+      </div>
+
+      {%- comment -%} Variant Selector (if product has variants) {%- endcomment -%}
+      {% if product.variants.size > 1 %}
+        <div class="product-card__variants">
+          {% assign color_option = null %}
+          {% for option in product.options_with_values %}
+            {% if option.name == 'Color' or option.name == 'Colour' %}
+              {% assign color_option = option %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+
+          {% if color_option %}
+            <div class="variant-swatches">
+              {% for value in color_option.values limit: 5 %}
+                <span class="swatch" data-value="{{ value | escape }}" title="{{ value | escape }}" style="background-color: {{ value | handleize }};"></span>
+              {% endfor %}
+              {% if color_option.values.size > 5 %}
+                <span class="swatch-more">+{{ color_option.values.size | minus: 5 }}</span>
+              {% endif %}
+            </div>
+          {% else %}
+            <p class="variant-count">{{ product.variants.size }} {{ 'products.product.variants' | t }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
