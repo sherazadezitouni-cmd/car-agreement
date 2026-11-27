@@ -6,7 +6,7 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 |---|---|---|---|
 | 1 | Concept | ✅ | « 60 secondes pour comprendre », thème argent/paperasse, leçons numérotées. Voir BIBLE-FORMAT.md |
 | 2 | Chaîne | 🟡 | Nom choisi : Personne T'a Dit · @handle à vérifier (personnetadit) · compte TikTok PAS encore créé · chauffe 3 jours pas commencée |
-| 3 | Atelier | 🟡 | Dossier : personne-ta-dit/ (branche claude/funny-darwin-ikigyn du dépôt car-agreement). Exemple rendu OK. Reste : clé ElevenLabs |
+| 3 | Atelier | ✅ | Dossier : personne-ta-dit/ (branche claude/funny-darwin-ikigyn du dépôt car-agreement). Exemple rendu OK. Clé ElevenLabs enregistrée dans l'environnement « Studio video - Personne T'a Dit » : la génération de voix marche (forfait payant actif), mais la clé n'a PAS la permission Voices (lecture) : impossible de lister les voix, il faut les ID de voix donnés par l'élève ou une nouvelle clé |
 | 4 | Univers visuel | ⬜ | |
 | 5 | Script épisode 1 | ⬜ | |
 | 6 | Voix et musique | ⬜ | Voix ID : |
@@ -18,7 +18,8 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 ## Notes techniques (pour Claude)
 - Session en ligne : rendre avec `--browser-executable=/opt/pw-browsers/chromium`.
 - Bruitages copiés en local dans `public/sfx/` (remotion.media n'est pas joignable pendant le rendu).
-- ElevenLabs : clé à fournir via le formulaire sécurisé de l'environnement (jamais dans le chat).
+- ElevenLabs : clé injectée par l'environnement. Lancer les scripts avec `ELEVENLABS_API_KEY=proxy-injected NODE_USE_ENV_PROXY=1`.
+- Polices et bruitages : rendre avec les fichiers locaux, le navigateur de rendu ne passe pas par le proxy.
 
 ## Calendrier
 | Date | Épisode | Écrit | Voix | Monté | Publié |
