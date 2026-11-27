@@ -3,6 +3,7 @@ import { ShortKevin } from "./episodes/kevin/Short";
 import { ShortTheo } from "./episodes/theo/Short";
 import { DemoFaitAvec, DemoFront, DemoSerie, DemoSerieFilm } from "./formats/Demos";
 import { Avatar, Banniere, Miniature, MiniatureShort } from "./marque/Marque";
+import { PropositionsDA } from "./marque/PropositionsDA";
 import { dureeTotale } from "./timing";
 import { voix as voixKevin } from "./voix/kevin";
 import { voix as voixTheo } from "./voix/theo";
@@ -35,6 +36,7 @@ export const RemotionRoot: React.FC = () => {
         <Still id="DemoFaitAvec" component={DemoFaitAvec} width={1080} height={1920} />
       </Folder>
       <Folder name="Chaine">
+        <Still id="PropositionsDA" component={PropositionsDA} width={3280} height={1920} />
         <Still
           id="Banniere"
           component={Banniere}

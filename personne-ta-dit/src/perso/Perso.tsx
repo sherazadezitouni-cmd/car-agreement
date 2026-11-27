@@ -52,6 +52,14 @@ const LOOK_POTE: Look = {
   lunettesVue: true,
 };
 
+// Sam, 27 ans : le jeune adulte perdu devant ses papiers (perso principal de « Personne T'a Dit »).
+const LOOK_SAM: Look = {
+  cheveux: "#2b2118",
+  coiffure: "boucles",
+  sweat: "#f2b134",
+  sweatOmbre: "#d4962a",
+};
+
 const C = couleurs.contour;
 const T = EPAISSEUR;
 const OR = "#f2c443";
@@ -430,3 +438,4 @@ export const Bastien: React.FC<Props & { readonly torseNu?: boolean }> = ({ tors
   <Perso look={{ ...LOOK_BASTIEN, torseNu }} {...props} />
 );
 export const Pote: React.FC<Props> = (props) => <Perso look={LOOK_POTE} {...props} />;
+export const Sam: React.FC<Props> = (props) => <Perso look={LOOK_SAM} {...props} />;
