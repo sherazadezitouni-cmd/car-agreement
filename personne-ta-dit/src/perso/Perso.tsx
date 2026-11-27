@@ -6,7 +6,7 @@ type Expression = "malin" | "rire" | "dort" | "supplie" | "choc" | "enerve";
 type Ecran = "batterie" | "eteint" | "allume";
 
 // Ce qui change d'un personnage à l'autre.
-type Look = {
+export type Look = {
   readonly cheveux: string;
   readonly coiffure: "bataille" | "plaquee" | "boucles";
   readonly sweat: string;
@@ -439,3 +439,5 @@ export const Bastien: React.FC<Props & { readonly torseNu?: boolean }> = ({ tors
 );
 export const Pote: React.FC<Props> = (props) => <Perso look={LOOK_POTE} {...props} />;
 export const Sam: React.FC<Props> = (props) => <Perso look={LOOK_SAM} {...props} />;
+// Perso avec un look libre (pour comparer des variantes).
+export const PersoLibre = Perso;
