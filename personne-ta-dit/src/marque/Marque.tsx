@@ -1,13 +1,13 @@
 import { AbsoluteFill } from "remotion";
 import { Rayons } from "../fx/Effets";
-import { Bastien, Kevin, Pote, Theo } from "../perso/Perso";
+import { Bastien, Kevin, Pote, Sam, Theo } from "../perso/Perso";
 import { couleurs, police } from "../theme";
 
 // Visuels de la chaîne : bannière, avatar, miniatures.
 // Tout se règle par les props (Studio → panneau de droite) puis :
 //   npx remotion still Banniere out/banniere.png
 
-const PERSOS = { kevin: Kevin, theo: Theo, bastien: Bastien, pote: Pote } as const;
+const PERSOS = { kevin: Kevin, theo: Theo, bastien: Bastien, pote: Pote, sam: Sam } as const;
 type PersoId = keyof typeof PERSOS;
 type Expression = "malin" | "rire" | "supplie" | "choc" | "enerve";
 
@@ -77,7 +77,7 @@ export const Avatar: React.FC<PropsMarque> = ({ rayonClair, rayonFonce, perso, e
   return (
     <AbsoluteFill>
       <Rayons clair={rayonClair} fonce={rayonFonce} />
-      <A expression={expression} style={{ position: "absolute", left: 200, top: 30, scale: "2", transformOrigin: "200px 200px" }} />
+      <A expression={expression} style={{ position: "absolute", left: 200, top: 130, scale: "1.6", transformOrigin: "200px 200px" }} />
     </AbsoluteFill>
   );
 };

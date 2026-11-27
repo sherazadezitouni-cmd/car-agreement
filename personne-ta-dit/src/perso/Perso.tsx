@@ -54,10 +54,11 @@ const LOOK_POTE: Look = {
 
 // Sam, 27 ans : le jeune adulte perdu devant ses papiers (perso principal de « Personne T'a Dit »).
 const LOOK_SAM: Look = {
-  cheveux: "#2b2118",
-  coiffure: "boucles",
-  sweat: "#f2b134",
-  sweatOmbre: "#d4962a",
+  cheveux: "#5a3a26",
+  coiffure: "plaquee",
+  sweat: "#ff7a59",
+  sweatOmbre: "#e0603f",
+  lunettesVue: true,
 };
 
 const C = couleurs.contour;

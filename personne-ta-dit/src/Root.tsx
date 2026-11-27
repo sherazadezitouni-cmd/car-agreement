@@ -60,11 +60,11 @@ export const RemotionRoot: React.FC = () => {
           width={800}
           height={800}
           defaultProps={{
-            nom: "MA CHAÎNE",
+            nom: "PERSONNE T'A DIT",
             slogan: "",
-            rayonClair: "#f5c04a",
-            rayonFonce: "#c9862a",
-            perso: "kevin",
+            rayonClair: "#bfe9e2",
+            rayonFonce: "#8fd6cb",
+            perso: "sam",
             persoBis: "theo",
             expression: "malin",
           }}
