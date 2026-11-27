@@ -36,12 +36,16 @@ Chaque vidéo est une leçon numérotée qui explique en 60 secondes une chose d
 ## Univers récurrent
 | Perso / lieu | Rôle | Look | Voix | Running gag |
 |---|---|---|---|---|
-| Sam, 27 ans | Le jeune adulte perdu qui découvre | à définir (étape 4) | — | Range ses papiers dans un tiroir qu'il n'ouvre jamais |
+| Sam, 27 ans | Le jeune adulte perdu qui découvre | Cheveux bruns plaqués, lunettes rondes, sweat corail | — | Range ses papiers dans un tiroir qu'il n'ouvre jamais |
 | La voix | Explique calmement | — | à choisir (étape 6) | Commence par « Bon. Respire. » |
 | Appart de Sam, bureau, banque | Décors | à définir (étape 4) | — | Le tiroir déborde un peu plus à chaque épisode |
 
-## Direction artistique (à affiner à l'étape 4)
-- Cartoon à plat, schémas très lisibles, gros chiffres animés, une couleur principale + une couleur d'accent pour les montants.
+## Direction artistique
+- Style « Cartoon pastel » : cartoon à plat, gros contours, fond en rayons turquoise (#bfe9e2 / #8fd6cb).
+- Couleurs : corail #ff7a59 (badges, sweat de Sam), jaune #ffd23f (mots surlignés, montants), contour #26222e.
+- Police : Lilita One (titres blancs à gros contour).
+- Signature : badge corail « LEÇON N°X » en haut + un objet-image par leçon.
+- Avatar : Sam malin sur rayons turquoise (marque-export/avatar.png).
 
 ## Voix et musique
 - À choisir à l'étape 6.
