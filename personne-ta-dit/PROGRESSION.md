@@ -6,7 +6,7 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 |---|---|---|---|
 | 1 | Concept | ✅ | « 60 secondes pour comprendre », thème argent/paperasse, leçons numérotées. Voir BIBLE-FORMAT.md |
 | 2 | Chaîne | 🟡 | Nom choisi : Personne T'a Dit · @handle à vérifier (personnetadit) · compte TikTok PAS encore créé · chauffe 3 jours pas commencée |
-| 3 | Atelier | ✅ | Dossier : personne-ta-dit/ (branche claude/funny-darwin-ikigyn du dépôt car-agreement). Exemple rendu OK. Clé ElevenLabs enregistrée dans l'environnement « Studio video - Personne T'a Dit » : la génération de voix marche (forfait payant actif), mais la clé n'a PAS la permission Voices (lecture) : impossible de lister les voix, il faut les ID de voix donnés par l'élève ou une nouvelle clé |
+| 3 | Atelier | ✅ | Dossier : personne-ta-dit/ (branche claude/funny-darwin-ikigyn du dépôt car-agreement). Exemple rendu OK. Clé ElevenLabs enregistrée dans l'environnement « Studio video - Personne T'a Dit » : génération de voix et liste des voix OK (forfait payant actif). Musique non testée |
 | 4 | Univers visuel | ⬜ | |
 | 5 | Script épisode 1 | ⬜ | |
 | 6 | Voix et musique | ⬜ | Voix ID : |
