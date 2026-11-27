@@ -9,8 +9,8 @@ import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 
 const ELEVENLABS = {
-  // Voix par défaut : ELEVENLABS_VOIX dans .env (sinon Sam, à ajouter à ses voix ElevenLabs).
-  voix: process.env.ELEVENLABS_VOIX || "198lDJ7fXvCGYF6ldCsA",
+  // Voix par défaut : ELEVENLABS_VOIX dans .env (sinon Will, la voix de la chaîne).
+  voix: process.env.ELEVENLABS_VOIX || "bIHbv24MWmeRgasZH58o", // Will : la voix de « Personne T'a Dit »
   modele: "eleven_v4", // comprend les indications de jeu entre [crochets]
   vitesse: 1.15, // 0,7 à 1,2
 };
@@ -34,8 +34,13 @@ const INDICATION = /^\[[^\]]*\]\s*/;
 // Petit blanc entre deux voix différentes (rythme d'un dialogue).
 const PAUSE_REPLIQUE = 0.12;
 
+// Durée d'un fichier audio en secondes (ffprobe : marche sur Mac, Windows et Linux).
 const duree = (fichier) =>
-  Number(execFileSync("afinfo", [fichier]).toString().match(/estimated duration: ([\d.]+)/)[1]);
+  Number(
+    execFileSync("npx", ["remotion", "ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", fichier])
+      .toString()
+      .trim(),
+  );
 
 const ffmpeg = (...args) => execFileSync("npx", ["remotion", "ffmpeg", "-hide_banner", "-loglevel", "error", "-y", ...args]);
 

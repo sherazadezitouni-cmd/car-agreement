@@ -9,7 +9,7 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 | 3 | Atelier | ✅ | Dossier : personne-ta-dit/ (branche claude/funny-darwin-ikigyn du dépôt car-agreement). Exemple rendu OK. Clé ElevenLabs enregistrée dans l'environnement « Studio video - Personne T'a Dit » : génération de voix et liste des voix OK (forfait payant actif). Musique non testée |
 | 4 | Univers visuel | ✅ | Style A « Cartoon pastel » · Sam version B (cheveux plaqués bruns, lunettes, sweat corail) · Avatar : Sam malin → marque-export/avatar.png (à mettre sur TikTok quand le compte sera créé) · Pas de bannière (TikTok seul) |
 | 5 | Script épisode 1 | ✅ | Leçon n°1 « Ta fiche de paie » validée → scripts/episodes/paie.mjs (≈ 65 s) |
-| 6 | Voix et musique | 🟡 | Audition envoyée (out/audition.mp3) : 1 Alice Xb7hH8MSUJpSbSDYk0k2 · 2 River SAz9YHcvj6GT2YYXdXww · 3 Will bIHbv24MWmeRgasZH58o · 4 Jessica cgSgspJ2msm6clMCkdW9. Choix en attente. Attention : scripts/voix.mjs utilise `afinfo` (Mac) → à adapter avec ffprobe ici |
+| 6 | Voix et musique | 🟡 | Voix de la chaîne : Will (ID bIHbv24MWmeRgasZH58o, par défaut dans scripts/voix.mjs). Voix off leçon 1 générée (public/voix/paie, ≈ 60 s), écoute envoyée, validation en attente. Musique : à faire |
 | 7 | Montage | ⬜ | |
 | 8 | Publication | ⬜ | Liens : |
 | 9 | Routine | ⬜ | |
