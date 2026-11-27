@@ -4,12 +4,12 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 
 | # | Étape | Statut | Notes |
 |---|---|---|---|
-| 1 | Concept | ✅ | « 60 secondes pour comprendre », thème argent/paperasse, leçons numérotées. Voir BIBLE-FORMAT.md |
+| 1 | Concept | 🟡 | À REFAIRE : l'élève abandonne le format éducatif (« c'est nul ») et veut passer à l'HUMOUR. Attention : elle n'a pas aimé l'humour de la démo Kevin. Type d'humour à choisir. BIBLE-FORMAT.md est périmée (format éducatif) |
 | 2 | Chaîne | 🟡 | Nom choisi : Personne T'a Dit · @handle à vérifier (personnetadit) · compte TikTok PAS encore créé · chauffe 3 jours pas commencée |
 | 3 | Atelier | ✅ | Dossier : personne-ta-dit/ (branche claude/funny-darwin-ikigyn du dépôt car-agreement). Exemple rendu OK. Clé ElevenLabs enregistrée dans l'environnement « Studio video - Personne T'a Dit » : génération de voix et liste des voix OK (forfait payant actif). Musique non testée |
 | 4 | Univers visuel | ✅ | Style A « Cartoon pastel » · Sam version B (cheveux plaqués bruns, lunettes, sweat corail) · Avatar : Sam malin → marque-export/avatar.png (à mettre sur TikTok quand le compte sera créé) · Pas de bannière (TikTok seul) |
-| 5 | Script épisode 1 | 🟡 | L'élève a REJETÉ le sujet « fiche de paie » après écoute (« on s'en fout »). scripts/episodes/paie.mjs = brouillon abandonné. Nouveau sujet à choisir (plus accrocheur, moins scolaire) puis réécrire |
-| 6 | Voix et musique | 🟡 | Will REJETÉ (accent canadien). L'élève veut un HOMME, français de France. Audition 2 envoyée (out/audition-voix-francaises.mp3) : 1 Antoine RINb2PsSYGXD07PG6mx3 · 2 Julien zlP1wgh6FsmMZswaDa2M · 3 Grégory ctilxqiD5xHFsAqEwjvS · 4 Romain 18NUO6C3U1qa5bYQCTq3 · 5 Jean Pusu0gPf7gLZlyRLR2qN (voix de bibliothèque utilisables directement). Choix en attente ; mettre l'ID choisi par défaut dans scripts/voix.mjs. Musique : à faire |
+| 5 | Script épisode 1 | ⬜ | À réécrire après le nouveau concept. scripts/episodes/paie.mjs = brouillon abandonné |
+| 6 | Voix et musique | 🟡 | Voix de la chaîne : Antoine (ID RINb2PsSYGXD07PG6mx3, homme, français de France), par défaut dans scripts/voix.mjs. Will rejeté (accent canadien). Voix off et musique : à faire après le nouveau script |
 | 7 | Montage | ⬜ | |
 | 8 | Publication | ⬜ | Liens : |
 | 9 | Routine | ⬜ | |

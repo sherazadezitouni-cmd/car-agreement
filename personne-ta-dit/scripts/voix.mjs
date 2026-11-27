@@ -9,8 +9,8 @@ import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 
 const ELEVENLABS = {
-  // Voix par défaut : ELEVENLABS_VOIX dans .env (sinon Will, la voix de la chaîne).
-  voix: process.env.ELEVENLABS_VOIX || "bIHbv24MWmeRgasZH58o", // Will : la voix de « Personne T'a Dit »
+  // Voix par défaut : ELEVENLABS_VOIX dans .env (sinon Antoine, la voix de la chaîne).
+  voix: process.env.ELEVENLABS_VOIX || "RINb2PsSYGXD07PG6mx3", // Antoine : la voix de la chaîne (français de France)
   modele: "eleven_v4", // comprend les indications de jeu entre [crochets]
   vitesse: 1.15, // 0,7 à 1,2
 };
