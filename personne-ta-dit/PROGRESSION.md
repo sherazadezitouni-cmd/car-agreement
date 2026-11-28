@@ -15,6 +15,17 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 | 9 | Routine | ⬜ | |
 | 10 | Bilan | ⬜ | |
 
+## Références envoyées par l'élève le 28/11 (« on va faire ça »)
+5 vidéos TikTok analysées (images + transcription). Deux familles :
+- Légendes qui font peur, 2D à plat sombre : @lenvers_ (FR, Kuchisake-onna, 67 s), @darkatlastales (EN, Jiangshi 135 s, Manananggal 72 s).
+  Recette : « Au/En [pays], si [signe], ne fais surtout pas [réflexe] » → nom de la créature → description → la légende →
+  « mais voici le pire » (règle contre-intuitive) → faiblesse → retour à « toi » ce soir → dernière phrase qui glace.
+  Narrateur seul à la 2e personne, sous-titres 2-3 mots avec un mot rouge/jaune, décors nuit, peu de mouvements.
+- Histoires en 3D façon blocs : @zaylento.yt (ninja sans pouvoir, 141 s), @pawranoid.pets (le facteur, 71 s).
+  Recette : « Dans cette ville, tout le monde est X, sauf moi » → 1re personne → indices → retournement. Sous-titres 1 mot jaune.
+  Le rendu 3D n'est PAS faisable avec l'atelier (2D) ; la structure d'histoire, si.
+Le concept « Sam et son cerveau » (sketch + voix déjà générés) est en pause tant que l'élève n'a pas choisi.
+
 ## Notes techniques (pour Claude)
 - Session en ligne : rendre avec `--browser-executable=/opt/pw-browsers/chromium`.
 - Bruitages copiés en local dans `public/sfx/` (remotion.media n'est pas joignable pendant le rendu).
