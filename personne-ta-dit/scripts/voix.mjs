@@ -27,7 +27,8 @@ if (!episode) {
 // Un épisode peut choisir sa voix de narrateur (`export const voix = "…"`), sinon celle par défaut.
 // Dialogues : `export const persos = { juge: "ID_VOIX", ... }` puis `qui: "juge"` sur un bloc
 // (ou `voix: "ID_VOIX"` directement). Chaque personnage parle avec sa propre voix.
-const { scenes, voix: voixEpisode, persos = {} } = await import(`./episodes/${episode}.mjs`);
+// Un épisode peut aussi régler sa vitesse (`export const vitesse = 1.0`) : les légendes se racontent plus lentement.
+const { scenes, voix: voixEpisode, persos = {}, vitesse: vitesseEpisode } = await import(`./episodes/${episode}.mjs`);
 const idVoix = voixEpisode ?? ELEVENLABS.voix;
 
 const INDICATION = /^\[[^\]]*\]\s*/;
@@ -61,7 +62,7 @@ const parler = async (id, texte) => {
   const reponse = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${id}/with-timestamps?output_format=mp3_44100_128`, {
     method: "POST",
     headers: { "xi-api-key": process.env.ELEVENLABS_API_KEY, "Content-Type": "application/json" },
-    body: JSON.stringify({ text: texte, model_id: ELEVENLABS.modele, language_code: "fr", voice_settings: { speed: ELEVENLABS.vitesse } }),
+    body: JSON.stringify({ text: texte, model_id: ELEVENLABS.modele, language_code: "fr", voice_settings: { speed: vitesseEpisode ?? ELEVENLABS.vitesse } }),
   });
   if (!reponse.ok) {
     throw new Error(`ElevenLabs ${reponse.status} : ${await reponse.text()}`);

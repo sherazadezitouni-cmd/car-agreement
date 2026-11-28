@@ -2,11 +2,14 @@
 // Narrateur seul (voix de la chaîne). `dit` = ce qui est prononcé, `affiche` = sous-titre (mot entre *étoiles* = en rouge).
 // Sources : Wikipédia « Aisha Qandicha », Hespress, H24info, Le Petit Journal (voir BIBLE-FORMAT.md).
 // Mise en scène (non sourcé) : « ils ne dorment plus… » et la phrase finale.
+// Débit posé (1 = vitesse normale) : une légende se raconte lentement.
+export const vitesse = 1.0;
+
 export const scenes = [
   {
     id: "accroche",
     blocs: [
-      { dit: "Au Maroc,", affiche: "AU *MAROC*," },
+      { dit: "[serious] Au Maroc,", affiche: "AU *MAROC*," },
       { dit: "si une femme magnifique", affiche: "UNE FEMME *MAGNIFIQUE*" },
       { dit: "t'attend seule au bord de l'eau, la nuit,", affiche: "AU BORD DE *L'EAU*" },
       { dit: "regarde d'abord ses pieds.", affiche: "REGARDE SES *PIEDS*." },
@@ -75,7 +78,7 @@ export const scenes = [
     id: "fin",
     blocs: [
       { dit: "Et si tu entends des sabots derrière toi…", affiche: "DES *SABOTS* DERRIÈRE TOI…" },
-      { dit: "c'est que tu as regardé trop tard.", affiche: "*TROP TARD*." },
+      { dit: "[whispers] c'est que tu as regardé trop tard.", affiche: "*TROP TARD*." },
     ],
   },
 ];

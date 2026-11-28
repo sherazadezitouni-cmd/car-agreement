@@ -7,9 +7,9 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 | 1 | Concept | ✅ | « Légendes du monde » (légendes qui font peur, 2e personne). Voir BIBLE-FORMAT.md. Abandonnés : éducatif argent, « Sam et son cerveau » |
 | 2 | Chaîne | 🟡 | Nom choisi : Personne T'a Dit · @handle à vérifier (personnetadit) · compte TikTok PAS encore créé · chauffe 3 jours pas commencée |
 | 3 | Atelier | ✅ | Dossier : personne-ta-dit/ (branche claude/funny-darwin-ikigyn du dépôt car-agreement). Exemple rendu OK. Clé ElevenLabs enregistrée dans l'environnement « Studio video - Personne T'a Dit » : génération de voix et liste des voix OK (forfait payant actif). Musique non testée |
-| 4 | Univers visuel | 🟡 | Nouveau style sombre à plat (src/legendes/Kandicha.tsx). Aperçu envoyé (out/apercu-legende.png), validation en attente. Avatar à refaire. Ancien style pastel/Sam abandonné |
+| 4 | Univers visuel | ✅ | Style sombre à plat validé (src/legendes/Kandicha.tsx, aperçu out/apercu-legende.png). Avatar à refaire dans ce style (pas encore fait) |
 | 5 | Script épisode 1 | ✅ | Aïcha Kandicha (Maroc) validé → scripts/episodes/kandicha.mjs (≈ 70 s). procrastination.mjs et paie.mjs = anciens brouillons |
-| 6 | Voix et musique | 🟡 | Narrateur = Antoine RINb2PsSYGXD07PG6mx3 (par défaut). Voix off kandicha PAS encore générée. Musique : à faire |
+| 6 | Voix et musique | 🟡 | Narrateur = Antoine RINb2PsSYGXD07PG6mx3, vitesse 1.0 (réglée dans l'épisode). Voix off kandicha générée (public/voix/kandicha, ≈ 52 s de parole), écoute envoyée (out/voix-kandicha.mp3), validation en attente. Musique : à faire |
 | 7 | Montage | ⬜ | |
 | 8 | Publication | ⬜ | Liens : |
 | 9 | Routine | ⬜ | |
