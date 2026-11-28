@@ -3,6 +3,7 @@ import { ShortKevin } from "./episodes/kevin/Short";
 import { ShortTheo } from "./episodes/theo/Short";
 import { DemoFaitAvec, DemoFront, DemoSerie, DemoSerieFilm } from "./formats/Demos";
 import { Avatar, Banniere, Miniature, MiniatureShort } from "./marque/Marque";
+import { ApercuLegende } from "./legendes/Kandicha";
 import { PropositionsDA } from "./marque/PropositionsDA";
 import { PropositionsSam } from "./marque/PropositionsSam";
 import { dureeTotale } from "./timing";
@@ -35,6 +36,9 @@ export const RemotionRoot: React.FC = () => {
         <Still id="DemoSerie" component={DemoSerie} width={1080} height={1920} />
         <Still id="DemoSerieFilm" component={DemoSerieFilm} width={1920} height={1080} />
         <Still id="DemoFaitAvec" component={DemoFaitAvec} width={1080} height={1920} />
+      </Folder>
+      <Folder name="Legendes">
+        <Still id="ApercuLegende" component={ApercuLegende} width={2180} height={1920} />
       </Folder>
       <Folder name="Chaine">
         <Still id="PropositionsSam" component={PropositionsSam} width={2400} height={1500} />

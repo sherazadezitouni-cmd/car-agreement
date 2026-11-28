@@ -1,63 +1,69 @@
-# Bible du format — Sam et son cerveau (chaîne : Personne T'a Dit, nom à confirmer)
+# Bible du format — Légendes du monde (chaîne : Personne T'a Dit, nom à confirmer)
 
 ## Le concept en une phrase
-Dans chaque vidéo, Sam veut faire quelque chose de simple et son cerveau, un deuxième personnage, vient le saboter :
-un sketch à dialogues, puis une phrase qui explique le vrai mécanisme psychologique.
+Chaque vidéo raconte une légende qui fait peur, d'un pays différent, à la deuxième personne :
+« Au [pays], si [signe], ne fais surtout pas [réflexe]. »
 
 ## Plateformes et rythme
-- TikTok (vidéos verticales, 45 à 90 s) — rythme de publication à fixer à l'étape 9.
-- Public : 20-35 ans · Thème : la psychologie du quotidien · Ton : humour.
+- TikTok (vidéos verticales, 60 à 90 s) — rythme de publication à fixer à l'étape 9.
+- Public : 20-35 ans · Ton : frisson, calme, jamais gore.
+
+## Inspiration et ce qu'on change
+- Références envoyées par l'élève (28/11) : @lenvers_ (FR), @darkatlastales (EN). Analyse dans PROGRESSION.md.
+- Mécaniques gardées : accroche pays + signe + interdit ; nom de la créature ; « mais voici le pire » ; faiblesse ; retour à « toi ce soir » ; dernière phrase qui glace ; dessin à plat de nuit ; sous-titres 2-3 mots avec un mot en couleur.
+- On NE reprend PAS : leurs légendes déjà traitées (Kuchisake-onna, Jiangshi, Manananggal), leurs phrases, leurs personnages et dessins, leur musique.
+- Notre patte : des légendes peu racontées en animation, sources citées en description, on dit clairement ce qui est légende.
 
 ## Historique des choix (pour ne pas refaire les mêmes erreurs)
-- Format éducatif « leçons numérotées sur l'argent » : ABANDONNÉ (jugé ennuyeux, « on s'en fout des fiches de paie »).
-- Humour de la démo « Voici Kevin » (portrait narré) : n'a PAS plu. On fait des dialogues, pas un narrateur qui décrit.
-- Voix à accent non français : rejetées. Uniquement des voix d'hommes en français de France.
+- Format éducatif argent (« fiche de paie ») : abandonné, jugé ennuyeux.
+- Humour façon démo « Voici Kevin » : n'a pas plu. « Sam et son cerveau » (sketch + voix générés) : mis de côté.
+- Voix à accent non français : rejetées. Voix d'homme, français de France.
+- « Légendes de France » seulement : refusé (pas assez d'idées) → légendes du MONDE.
 
-## Structure d'un épisode (≈ 60 s)
-| Temps | Bloc | Ce qui se passe |
-|---|---|---|
-| 0–3 s | Accroche | Texte « Quand tu te dis : … » + première réplique qui pose déjà le conflit |
-| 3–45 s | L'escalade | Le cerveau trouve une excuse de plus en plus grosse ; un chiffre recule ou monte (heure, jour, mois) |
-| 45–52 s | Le retournement | Sam craque ou la réalité rattrape tout le monde |
-| 52–58 s | La chute | Rappel d'un détail du début, fin sèche |
-| fin | La phrase | Voix du narrateur : le mécanisme psychologique en une ou deux phrases (vérifié, source en description) |
+## Structure d'un épisode (≈ 70 s, ≈ 170-190 mots)
+| Bloc | Ce qui se passe |
+|---|---|
+| Accroche (0-6 s) | « Au [pays], si [signe], [interdit]. » |
+| Le nom | « Là-bas, on l'appelle… » |
+| Le portrait | 3-4 détails courts, un par plan |
+| La légende | D'où elle vient (« certains racontent… ») |
+| « Mais voici le pire » | La règle qui piège |
+| La faiblesse | Ce qui la trahit ou l'arrête |
+| Toi, ce soir | Retour à la 2e personne, consigne |
+| Fin | Une phrase qui glace, fin sèche |
 
-## Ton et règles d'écriture (guide « humour-sketchs-animes »)
-- Dialogue, pas narration. Un seul moteur comique poussé jusqu'au bout.
-- Le Cerveau est 100 % sérieux, calme, poli, d'une logique tordue mais impossible à contrer. Il ne fait jamais de clin d'œil.
-- Répliques de 12 mots maximum. Détails concrets et français.
-- Chute qui rappelle un détail du début, fin sèche.
-- Humour sur les comportements, jamais sur les origines, la religion, le handicap ou le physique.
-- La phrase de fin s'appuie sur une source sérieuse ; ni diagnostic ni conseil médical.
-
-## Univers récurrent
-| Perso / lieu | Rôle | Look | Voix | Running gag |
-|---|---|---|---|---|
-| Sam, 27 ans | Veut bien faire, se fait toujours avoir | Cheveux bruns plaqués, lunettes rondes, sweat corail | Grégory (ctilxqiD5xHFsAqEwjvS) | Il finit toujours par suivre son cerveau |
-| Le Cerveau | Le saboteur poli | Petit personnage rose, très calme (à dessiner) | Julien (zlP1wgh6FsmMZswaDa2M) | « Excellente décision. » avant de tout saboter |
-| Le narrateur | La phrase de fin | — | Antoine (RINb2PsSYGXD07PG6mx3) | — |
-| L'appart de Sam | Décor principal | Bureau, cuisine (le four), chambre | — | Le four |
+## Règles d'écriture
+- Phrases très courtes, présent, 2e personne. Narrateur seul.
+- Vérifier chaque légende sur plusieurs sources avant d'écrire ; ne garder que ce qui est confirmé ;
+  dire à l'élève ce qui est de la mise en scène. « Certains racontent » quand il y a plusieurs versions.
+- Respect des cultures : on raconte une légende, on ne se moque ni d'un pays ni d'une religion.
+- Peur par suggestion : pas de sang montré en gros plan, pas de violence détaillée.
 
 ## Direction artistique
-- Style « Cartoon pastel » : cartoon à plat, gros contours, rayons turquoise (#bfe9e2 / #8fd6cb).
-- Couleurs : corail #ff7a59, jaune #ffd23f (mots surlignés), contour #26222e. Police : Lilita One.
-- Signature : une horloge / un compteur bien visible qui change à chaque scène.
-- Avatar : Sam malin sur rayons turquoise (marque-export/avatar.png).
+- Dessin à plat, nuit : ciel #070b1d → #1b2752, lune crème #f1e9cf, silhouettes très sombres.
+- Une seule couleur vive : rouge #e23b3b pour le mot-clé du sous-titre.
+- Police : Oswald 700, majuscules, sous-titres de 2-3 mots en bas de l'écran.
+- Peu de mouvements : lents zooms, apparitions, un détail qui bouge.
+- Composants : src/legendes/Kandicha.tsx (NUIT, SousTitreLegende, Aicha, PlanRiviere, PlanSabots).
+- Avatar : à refaire (l'ancien avatar pastel de Sam ne convient plus).
 
 ## Voix et musique
-- Voix : voir tableau. Musique : à choisir (générée, sans droits).
+- Narrateur : Antoine (RINb2PsSYGXD07PG6mx3), par défaut dans scripts/voix.mjs. Une voix plus grave peut être testée.
+- Musique : nappe sombre et lente, générée (sans droits). Bruitages discrets (sabots, eau, vent).
 
 ## CTA
-- Fin : question en légende (« Et toi, tu t'y mets à quelle heure ? ») + « envoie ça à ton pote qui… ».
+- Légende de la vidéo : question (« Et chez toi, c'est quoi la légende qu'on te racontait ? ») : fait commenter et donne des idées.
 
 ## Banque de sujets
-1. « Je m'y mets à 14h pile » (procrastination) — épisode 1
-2. « Juste une vidéo avant de dormir » (le scroll)
-3. « Vu à 14h12 » (surinterprétation d'un message sans réponse)
-4. « 3h du matin » (ruminations : la honte de 2014)
-5. « Je note pas, je vais m'en souvenir » (mémoire)
-6. « J'ai mérité une récompense » (après 4 minutes de sport)
-7. « Je vais juste regarder le prix » (achat impulsif)
-8. « Non mais dis-lui, toi » (éviter un appel téléphonique)
-9. « Je réponds plus tard » (le message jamais renvoyé)
-10. « Lundi je commence » (les bonnes résolutions)
+1. Aïcha Kandicha (Maroc) — épisode 1
+2. Le Kelpie (Écosse)
+3. La Llorona (Mexique)
+4. L'Ankou (Bretagne)
+5. La Dame de midi (Pologne)
+6. La Banshee (Irlande)
+7. Le Wendigo (Canada, peuples algonquiens)
+8. Baba Yaga (Russie)
+9. Le Nøkken (Norvège)
+10. Teke Teke (Japon)
+11. La Pontianak (Malaisie / Indonésie)
+12. Le Tokoloshe (Afrique du Sud)
