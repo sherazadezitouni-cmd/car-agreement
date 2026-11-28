@@ -1,4 +1,5 @@
 import { Composition, Folder, Still } from "remotion";
+import { ShortKandicha, dureeKandicha } from "./episodes/kandicha/Short";
 import { ShortKevin } from "./episodes/kevin/Short";
 import { ShortTheo } from "./episodes/theo/Short";
 import { DemoFaitAvec, DemoFront, DemoSerie, DemoSerieFilm } from "./formats/Demos";
@@ -38,6 +39,7 @@ export const RemotionRoot: React.FC = () => {
         <Still id="DemoFaitAvec" component={DemoFaitAvec} width={1080} height={1920} />
       </Folder>
       <Folder name="Legendes">
+        <Composition id="Kandicha" component={ShortKandicha} durationInFrames={dureeKandicha(30)} fps={30} width={1080} height={1920} />
         <Still id="ApercuLegende" component={ApercuLegende} width={2180} height={1920} />
       </Folder>
       <Folder name="Chaine">

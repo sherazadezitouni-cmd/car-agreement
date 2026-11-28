@@ -69,7 +69,7 @@ export const scenes = [
     id: "toi",
     blocs: [
       { dit: "Alors ce soir,", affiche: "ALORS *CE SOIR*," },
-      { dit: "si une inconnue te sourit au bord de l'eau,", affiche: "UNE INCONNUE TE *SOURIT*" },
+      { dit: "si une inconnue te sourit au bord de l'eau,", affiche: "L'INCONNUE TE *SOURIT*" },
       { dit: "ne regarde pas son visage.", affiche: "PAS SON *VISAGE*." },
       { dit: "Baisse les yeux.", affiche: "*BAISSE* LES YEUX." },
     ],

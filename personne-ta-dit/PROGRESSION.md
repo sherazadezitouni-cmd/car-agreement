@@ -9,8 +9,8 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 | 3 | Atelier | ✅ | Dossier : personne-ta-dit/ (branche claude/funny-darwin-ikigyn du dépôt car-agreement). Exemple rendu OK. Clé ElevenLabs enregistrée dans l'environnement « Studio video - Personne T'a Dit » : génération de voix et liste des voix OK (forfait payant actif). Musique non testée |
 | 4 | Univers visuel | ✅ | Style sombre à plat validé (src/legendes/Kandicha.tsx, aperçu out/apercu-legende.png). Avatar à refaire dans ce style (pas encore fait) |
 | 5 | Script épisode 1 | ✅ | Aïcha Kandicha (Maroc) validé → scripts/episodes/kandicha.mjs (≈ 70 s). procrastination.mjs et paie.mjs = anciens brouillons |
-| 6 | Voix et musique | 🟡 | Narrateur = Antoine RINb2PsSYGXD07PG6mx3, vitesse 1.0 (réglée dans l'épisode). Voix off kandicha générée (public/voix/kandicha, ≈ 52 s de parole), écoute envoyée (out/voix-kandicha.mp3), validation en attente. Musique : à faire |
-| 7 | Montage | ⬜ | |
+| 6 | Voix et musique | ✅ | Narrateur = Antoine RINb2PsSYGXD07PG6mx3, vitesse 1.0. Voix off kandicha OK. PAS de musique dans la vidéo : l'élève l'ajoute elle-même sur TikTok |
+| 7 | Montage | 🟡 | Vidéo rendue : out/legende-aicha-kandicha.mp4 (61,5 s, -13,6 LUFS), composition « Kandicha » (src/episodes/kandicha/). Envoyée, avis de l'élève en attente. Pas de bruitages |
 | 8 | Publication | ⬜ | Liens : |
 | 9 | Routine | ⬜ | |
 | 10 | Bilan | ⬜ | |
@@ -30,6 +30,7 @@ Le concept « Sam et son cerveau » (sketch + voix déjà générés) est en pau
 - Session en ligne : rendre avec `--browser-executable=/opt/pw-browsers/chromium`.
 - Bruitages copiés en local dans `public/sfx/` (remotion.media n'est pas joignable pendant le rendu).
 - ElevenLabs : clé injectée par l'environnement. Lancer les scripts avec `ELEVENLABS_API_KEY=proxy-injected NODE_USE_ENV_PROXY=1`.
+- Rendu de l'épisode : `npx remotion render Kandicha out/legende-aicha-kandicha.mp4 --browser-executable=/opt/pw-browsers/chromium` (≈ 5 min).
 - Polices et bruitages : rendre avec les fichiers locaux, le navigateur de rendu ne passe pas par le proxy.
 
 ## Calendrier

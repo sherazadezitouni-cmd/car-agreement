@@ -50,7 +50,7 @@ export const SousTitreLegende: React.FC<{ readonly texte: string; readonly bas?:
   </div>
 );
 
-const Etoiles: React.FC = () => (
+export const Etoiles: React.FC = () => (
   <>
     {[
       [120, 180, 3], [300, 90, 2], [520, 240, 2], [760, 130, 3], [960, 300, 2], [200, 420, 2], [640, 60, 2],
@@ -61,7 +61,7 @@ const Etoiles: React.FC = () => (
   </>
 );
 
-const Palmier: React.FC<{ readonly x: number; readonly y: number; readonly h: number; readonly couleur?: string }> = ({
+export const Palmier: React.FC<{ readonly x: number; readonly y: number; readonly h: number; readonly couleur?: string }> = ({
   x,
   y,
   h,
@@ -75,25 +75,26 @@ const Palmier: React.FC<{ readonly x: number; readonly y: number; readonly h: nu
   </g>
 );
 
-// Aïcha Kandicha vue de dos : longs cheveux noirs, robe blanche, et un sabot qui dépasse.
-export const Aicha: React.FC<{ readonly x: number; readonly y: number; readonly echelle?: number; readonly sabots?: boolean }> = ({
+// Aïcha Kandicha vue de dos : longs cheveux noirs, robe blanche.
+// `ourlet` = hauteur (px) à laquelle le bas de la robe se soulève : dessous, des pattes et des sabots.
+export const Aicha: React.FC<{ readonly x: number; readonly y: number; readonly echelle?: number; readonly ourlet?: number }> = ({
   x,
   y,
   echelle = 1,
-  sabots = false,
+  ourlet = 0,
 }) => (
   <g transform={`translate(${x} ${y}) scale(${echelle})`}>
-    {sabots ? (
+    {ourlet > 0 ? (
       <>
-        <path d="M-66 -30 L-60 34 L-24 34 L-28 -30 Z" fill="#6b4a36" />
-        <path d="M28 -30 L24 34 L60 34 L66 -30 Z" fill="#6b4a36" />
+        <path d={`M-66 ${-ourlet - 20} L-60 34 L-24 34 L-28 ${-ourlet - 20} Z`} fill="#6b4a36" />
+        <path d={`M28 ${-ourlet - 20} L24 34 L60 34 L66 ${-ourlet - 20} Z`} fill="#6b4a36" />
         <path d="M-64 30 L-70 74 Q-42 88 -16 74 L-22 30 Z" fill="#1c120c" />
         <path d="M22 30 L16 74 Q42 88 70 74 L64 30 Z" fill="#1c120c" />
         <path d="M-43 44 L-43 80 M43 44 L43 80" stroke="#6b4a36" strokeWidth={6} />
       </>
     ) : null}
-    <path d={`M-70 -640 Q-150 -300 -120 ${sabots ? -24 : 0} L120 ${sabots ? -24 : 0} Q150 -300 70 -640 Z`} fill={NUIT.robe} />
-    <path d={`M30 -640 Q110 -300 90 ${sabots ? -24 : 0} L120 ${sabots ? -24 : 0} Q150 -300 70 -640 Z`} fill={NUIT.robeOmbre} />
+    <path d={`M-70 -640 Q-150 -300 -120 ${-ourlet} L120 ${-ourlet} Q150 -300 70 -640 Z`} fill={NUIT.robe} />
+    <path d={`M30 -640 Q110 -300 90 ${-ourlet} L120 ${-ourlet} Q150 -300 70 -640 Z`} fill={NUIT.robeOmbre} />
     <path d="M-70 -640 Q-112 -560 -118 -420 L-96 -420 Q-90 -540 -58 -610 Z" fill={NUIT.robe} />
     <path d="M70 -640 Q112 -560 118 -420 L96 -420 Q90 -540 58 -610 Z" fill={NUIT.robeOmbre} />
     <path
@@ -191,7 +192,7 @@ export const PlanSabots: React.FC<{ readonly sousTitre: string }> = ({ sousTitre
       ))}
       <path d="M0 1420 Q540 1360 1080 1420 L1080 1920 L0 1920 Z" fill={NUIT.terre} />
       <ellipse cx={560} cy={1470} rx={210} ry={22} fill="#000" opacity={0.55} />
-      <Aicha x={560} y={1380} echelle={1.18} sabots />
+      <Aicha x={560} y={1380} echelle={1.18} ourlet={24} />
     </svg>
     <SousTitreLegende texte={sousTitre} bas={250} />
   </AbsoluteFill>

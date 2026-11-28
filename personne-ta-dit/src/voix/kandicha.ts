@@ -191,7 +191,7 @@ export const voix = {
         "endMs": 1280
       },
       {
-        "text": "UNE INCONNUE TE *SOURIT*",
+        "text": "L'INCONNUE TE *SOURIT*",
         "startMs": 1280,
         "endMs": 3440
       },
