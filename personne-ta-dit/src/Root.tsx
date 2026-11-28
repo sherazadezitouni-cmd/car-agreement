@@ -5,6 +5,7 @@ import { ShortTheo } from "./episodes/theo/Short";
 import { DemoFaitAvec, DemoFront, DemoSerie, DemoSerieFilm } from "./formats/Demos";
 import { Avatar, Banniere, Miniature, MiniatureShort } from "./marque/Marque";
 import { ApercuLegende } from "./legendes/Kandicha";
+import { DUREE_TEST, TestAnimation } from "./legendes/TestAnimation";
 import { PropositionsDA } from "./marque/PropositionsDA";
 import { PropositionsSam } from "./marque/PropositionsSam";
 import { dureeTotale } from "./timing";
@@ -39,6 +40,7 @@ export const RemotionRoot: React.FC = () => {
         <Still id="DemoFaitAvec" component={DemoFaitAvec} width={1080} height={1920} />
       </Folder>
       <Folder name="Legendes">
+        <Composition id="TestAnimation" component={TestAnimation} durationInFrames={DUREE_TEST} fps={30} width={1080} height={1920} />
         <Composition id="Kandicha" component={ShortKandicha} durationInFrames={dureeKandicha(30)} fps={30} width={1080} height={1920} />
         <Still id="ApercuLegende" component={ApercuLegende} width={2180} height={1920} />
       </Folder>

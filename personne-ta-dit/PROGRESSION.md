@@ -10,7 +10,7 @@ Mode : Production (session Claude en ligne) · Plateformes : TikTok · Ordinateu
 | 4 | Univers visuel | ✅ | Style sombre à plat validé (src/legendes/Kandicha.tsx, aperçu out/apercu-legende.png). Avatar à refaire dans ce style (pas encore fait) |
 | 5 | Script épisode 1 | ✅ | Aïcha Kandicha (Maroc) validé → scripts/episodes/kandicha.mjs (≈ 70 s). procrastination.mjs et paie.mjs = anciens brouillons |
 | 6 | Voix et musique | ✅ | Narrateur = Antoine RINb2PsSYGXD07PG6mx3, vitesse 1.0. Voix off kandicha OK. PAS de musique dans la vidéo : l'élève l'ajoute elle-même sur TikTok |
-| 7 | Montage | 🟡 | Vidéo rendue : out/legende-aicha-kandicha.mp4 (61,5 s, -13,6 LUFS), composition « Kandicha » (src/episodes/kandicha/). Envoyée, avis de l'élève en attente. Pas de bruitages |
+| 7 | Montage | 🟡 | 1re version (out/legende-aicha-kandicha.mp4) REJETÉE : « horrible », personnages figés de dos. L'élève veut des bonshommes qui BOUGENT comme @lenvers_ (héros avec visage qui marche, créature de face, plans variés toutes les 2-4 s, partie HISTOIRE « ce soir tu rentres seul… »). Fait : personnages articulés (src/legendes/Persos.tsx : HerosProfil, HerosFace, AichaFace, AichaProfil) + test 12 s (composition TestAnimation, out/test-animation.mp4) envoyé, avis en attente. Ensuite : réécrire le script avec une partie histoire, regénérer la voix, remonter tout l'épisode avec ces personnages |
 | 8 | Publication | ⬜ | Liens : |
 | 9 | Routine | ⬜ | |
 | 10 | Bilan | ⬜ | |

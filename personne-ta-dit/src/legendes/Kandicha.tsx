@@ -35,6 +35,8 @@ export const SousTitreLegende: React.FC<{ readonly texte: string; readonly bas?:
       letterSpacing: 2,
       lineHeight: 1.1,
       color: NUIT.texte,
+      WebkitTextStroke: "12px #05070f",
+      paintOrder: "stroke fill",
       textShadow: "0 6px 24px rgba(0,0,0,0.85)",
     }}
   >
